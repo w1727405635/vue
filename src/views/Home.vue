@@ -12,28 +12,6 @@
   </div>
 </template>
 
-<style scoped>
-.homelist{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  position: fixed;
-  bottom: 58px;
-  overflow-y:auto;
-}
-.homelist Li{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.homelist in img{
-  width: 90%;
-  border-radius: 5px;
-}
-</style>
-
 <script>
 import Banner from "../components/Banner";
 import { getHomeAll } from "../api";
@@ -61,3 +39,23 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.homelist{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.homelist Li{
+  width: 50%;
+  padding-top: 20px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homelist in img{
+  width: 90%;
+  border-radius: 5px;
+}
+</style>

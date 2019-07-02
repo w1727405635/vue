@@ -5,6 +5,7 @@
     <router-view />
   </div>
 </template>
+
 <script>
 //1 引入组件
 import Nav from "./components/Nav";
@@ -15,7 +16,8 @@ export default {
   }
 };
 </script>
-<style>
+
+<style scoped>
 .container{
   position: fixed;
   top: 0;
